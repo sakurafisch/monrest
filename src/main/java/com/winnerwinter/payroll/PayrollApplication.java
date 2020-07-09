@@ -1,13 +1,13 @@
-package com.winnerwinter.monrest;
+package com.winnerwinter.payroll;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MonrestApplication {
+public class PayrollApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MonrestApplication.class, args);
+        SpringApplication.run(PayrollApplication.class, args);
     }
 
 }
