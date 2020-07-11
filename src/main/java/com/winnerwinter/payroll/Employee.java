@@ -1,46 +1,23 @@
 package com.winnerwinter.payroll;
 
+import lombok.*;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.util.Objects;
 
 @Entity
+@NoArgsConstructor
 class Employee {
 
-    private @Id @GeneratedValue Long id;
-    private String name;
-    private String role;
-
-    Employee() {}
+    private @Id @GeneratedValue @Getter @Setter Long id;
+    private @Getter @Setter String name;
+    private @Getter @Setter String role;
 
     Employee(String name, String role) {
 
         this.name = name;
-        this.role = role;
-    }
-
-    public Long getId() {
-        return this.id;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public String getRole() {
-        return this.role;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setRole(String role) {
         this.role = role;
     }
 
